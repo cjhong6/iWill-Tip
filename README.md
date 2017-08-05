@@ -41,7 +41,7 @@ As part of your pre-work submission, please reflect on the app and answer the fo
 
 **Answer:** My reaction to the IOS app developmnet so far is very easy to pick up since I have programming experience. I would explain outlet as a connection that connect the frondend UI to the backend code. An action would be what do you expect certain part of the toggle(button, text, etc.) perform. I think the implementation under the hood would be writing it out like html element.
 
-Question 2: "Swift uses [Automatic Reference Counting](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/AutomaticReferenceCounting.html#//apple_ref/doc/uid/TP40014097-CH20-ID49) (ARC), which is not a garbage collector, to manage memory. Can you explain how you can get a strong reference cycle for closures? (There's a section explaining this concept in the link, how would you summarize as simply as possible?)"
+**Question 2**: "Swift uses [Automatic Reference Counting](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/AutomaticReferenceCounting.html#//apple_ref/doc/uid/TP40014097-CH20-ID49) (ARC), which is not a garbage collector, to manage memory. Can you explain how you can get a strong reference cycle for closures? (There's a section explaining this concept in the link, how would you summarize as simply as possible?)"
 
 **Answer:** Strong reference cycle for closures is setting up the reference in a way that the ARC won't deallocate the instance. The way it set up is create a clsoure property inside the class and the body of the closure property need access the instance's property using keyword "self".
 
